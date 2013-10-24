@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46CE66FE1819681800382501 /* LZPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE66FD1819681800382501 /* LZPost.m */; };
 		46CF45F6181957BC003E63B7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CF45F5181957BC003E63B7 /* Cocoa.framework */; };
 		46CF4600181957BC003E63B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46CF45FE181957BC003E63B7 /* InfoPlist.strings */; };
 		46CF4602181957BC003E63B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CF4601181957BC003E63B7 /* main.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46CE66FC1819681800382501 /* LZPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZPost.h; path = "Birthdays/Data Source/LZPost.h"; sourceTree = SOURCE_ROOT; };
+		46CE66FD1819681800382501 /* LZPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZPost.m; path = "Birthdays/Data Source/LZPost.m"; sourceTree = SOURCE_ROOT; };
 		46CF45F2181957BC003E63B7 /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CF45F5181957BC003E63B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		46CF45F8181957BC003E63B7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -175,6 +178,8 @@
 				46CF462D18195D30003E63B7 /* Sample Data */,
 				46CF462A18195D16003E63B7 /* LZJSONLoader.h */,
 				46CF462B18195D16003E63B7 /* LZJSONLoader.m */,
+				46CE66FC1819681800382501 /* LZPost.h */,
+				46CE66FD1819681800382501 /* LZPost.m */,
 				46CF463018195D9B003E63B7 /* LZAggregator.h */,
 				46CF463118195D9B003E63B7 /* LZAggregator.m */,
 				46CF463218195D9B003E63B7 /* LZComment.h */,
@@ -296,6 +301,7 @@
 			files = (
 				46CF4609181957BC003E63B7 /* BDAppDelegate.m in Sources */,
 				46CF4602181957BC003E63B7 /* main.m in Sources */,
+				46CE66FE1819681800382501 /* LZPost.m in Sources */,
 				46CF463718195D9B003E63B7 /* LZComment.m in Sources */,
 				46CF463618195D9B003E63B7 /* LZAggregator.m in Sources */,
 				46CF463818195D9B003E63B7 /* LZUser.m in Sources */,
@@ -510,6 +516,7 @@
 				46CF4625181957BC003E63B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46CF4626181957BC003E63B7 /* Build configuration list for PBXNativeTarget "BirthdaysTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +525,7 @@
 				46CF4628181957BC003E63B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

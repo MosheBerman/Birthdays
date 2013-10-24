@@ -10,12 +10,13 @@
 
 #import "LZComment.h"
 #import "LZUser.h"
-
+#import "LZPost.h"
 
 
 @interface LZJSONLoader ()
 
 @property (nonatomic, strong) NSMutableArray *users;
+@property (nonatomic, strong) NSMutableArray *posts;
 
 @end
 
@@ -26,6 +27,7 @@
     self = [super init];
     if (self) {
         _users = [[NSMutableArray alloc] init];
+        _posts = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -47,7 +49,7 @@
                 NSError *error = nil;
                 NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
                 
-                NSArray *commentDataSet = dictionary[@"data"];
+                NSArray *dataSet = dictionary[@"data"];
                 
                 //	If there was an error, log it
                 if (error) {
@@ -55,26 +57,37 @@
                 }
                 
                 //	if not, and there's a data set, load it up
-                else if([commentDataSet isKindOfClass:[NSArray class]])
+                else if([dataSet isKindOfClass:[NSArray class]])
                 {
                     
                     NSMutableDictionary *userCache = [[NSMutableDictionary alloc] init];
                     
-                    for (NSDictionary *commentData in commentDataSet)
+                    for (NSDictionary *postData in dataSet)
                     {
                         
-                        NSString *userKey = [commentData[@"from"][@"name"] lowercaseString];
+                        /**
+                         *  Load the post into an array.
+                         */
+                        
+                        LZPost *post = [LZPost postWithDictionary:postData];
+                        [[self posts] addObject:post];
+                        
+                        /**
+                         *  Add the poster to the user list if 
+                         *  he or she isn't accounted for yet.
+                         *
+                         */
+                        NSString *userKey = [postData[@"from"][@"name"] lowercaseString];
                         
                         if (!userCache[userKey]) {
                             
                             LZUser *user = [[LZUser alloc] init];
                             user.name = [userKey capitalizedString];
-                            user.facebookID = commentData[@"from"][@"id"];
+                            user.facebookID = postData[@"from"][@"id"];
                             userCache[userKey] = user;
                         }
                         
-                        LZComment *comment = [LZComment commentWithDictionary:commentData];
-                        [userCache[userKey] addComment:comment];
+                        
                     }
                     
                     [_users removeAllObjects];

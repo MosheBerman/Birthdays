@@ -7,10 +7,11 @@
 //
 
 #import "LZPost.h"
+#import "LZComment.h"
 
 @implementation LZPost
 
-+ (LZPost *)commentWithDictionary:(NSDictionary *)dictionary
++ (LZPost *)postWithDictionary:(NSDictionary *)dictionary
 {
     LZPost *post = [[LZPost alloc] init];
     
@@ -22,7 +23,12 @@
         post.likeCount		= [dictionary[@"likes"][@"data"] count];
         post.userLikes		= [dictionary[@"user_likes"] boolValue];
         post.application    = dictionary[@"application"][@"name"];
+        post.comments = [[NSMutableArray alloc] init];
         
+        for (NSDictionary *commentData in dictionary[@"comments"][@"data"]) {
+            LZComment *comment = [LZComment commentWithDictionary:commentData];
+            [[post comments] addObject:comment];
+        }
     }
     
     return post;

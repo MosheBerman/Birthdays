@@ -19,8 +19,9 @@
 @property (nonatomic, assign) NSInteger likeCount;
 @property (nonatomic, assign) BOOL userLikes;
 @property (nonatomic, strong) NSString *application;
+@property (nonatomic, strong) NSMutableArray *comments;
 
-+ (LZPost *)commentWithDictionary:(NSDictionary *)dictionary;
++ (LZPost *)postWithDictionary:(NSDictionary *)dictionary;
 
 
 @end

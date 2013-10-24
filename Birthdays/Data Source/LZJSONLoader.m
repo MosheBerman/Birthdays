@@ -70,20 +70,21 @@
                          */
                         
                         LZPost *post = [LZPost postWithDictionary:postData];
-                        [[self posts] addObject:post];
+                        [_posts addObject:post];
                         
                         /**
-                         *  Add the poster to the user list if 
+                         *  Add the poster to the user list if
                          *  he or she isn't accounted for yet.
                          *
                          */
                         NSString *userKey = [postData[@"from"][@"name"] lowercaseString];
                         
+                        LZUser *user = [[LZUser alloc] init];
+                        user.name = [userKey capitalizedString];
+                        user.facebookID = postData[@"from"][@"id"];
+                        post.user = user;
+                        
                         if (!userCache[userKey]) {
-                            
-                            LZUser *user = [[LZUser alloc] init];
-                            user.name = [userKey capitalizedString];
-                            user.facebookID = postData[@"from"][@"id"];
                             userCache[userKey] = user;
                         }
                         

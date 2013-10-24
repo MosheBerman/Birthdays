@@ -11,6 +11,8 @@
 @interface LZJSONLoader : NSObject
 
 - (void)loadJSONFromURL:(NSURL *)url withCompletion:(void(^)(BOOL success))completion;
+
 - (NSArray *)users;
+- (NSArray *)posts;
 
 @end

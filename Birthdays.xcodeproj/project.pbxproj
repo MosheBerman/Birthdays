@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46CE66FE1819681800382501 /* LZPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE66FD1819681800382501 /* LZPost.m */; };
+		46CE6739181A187800382501 /* BDMetricsCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CE6738181A187800382501 /* BDMetricsCalculator.m */; };
 		46CF45F6181957BC003E63B7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CF45F5181957BC003E63B7 /* Cocoa.framework */; };
 		46CF4600181957BC003E63B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46CF45FE181957BC003E63B7 /* InfoPlist.strings */; };
 		46CF4602181957BC003E63B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CF4601181957BC003E63B7 /* main.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		46CE66FC1819681800382501 /* LZPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZPost.h; path = "Birthdays/Data Source/LZPost.h"; sourceTree = SOURCE_ROOT; };
 		46CE66FD1819681800382501 /* LZPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZPost.m; path = "Birthdays/Data Source/LZPost.m"; sourceTree = SOURCE_ROOT; };
+		46CE6737181A187800382501 /* BDMetricsCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDMetricsCalculator.h; path = Birthdays/MetricsCalculator/BDMetricsCalculator.h; sourceTree = SOURCE_ROOT; };
+		46CE6738181A187800382501 /* BDMetricsCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDMetricsCalculator.m; path = Birthdays/MetricsCalculator/BDMetricsCalculator.m; sourceTree = SOURCE_ROOT; };
 		46CF45F2181957BC003E63B7 /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CF45F5181957BC003E63B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		46CF45F8181957BC003E63B7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 				46CF4607181957BC003E63B7 /* BDAppDelegate.h */,
 				46CF4608181957BC003E63B7 /* BDAppDelegate.m */,
 				46CF460A181957BC003E63B7 /* MainMenu.xib */,
+				46CE6737181A187800382501 /* BDMetricsCalculator.h */,
+				46CE6738181A187800382501 /* BDMetricsCalculator.m */,
 				46CF462918195D16003E63B7 /* Data Source */,
 				46CF460D181957BC003E63B7 /* Images.xcassets */,
 				46CF45FC181957BC003E63B7 /* Supporting Files */,
@@ -306,6 +311,7 @@
 				46CF463618195D9B003E63B7 /* LZAggregator.m in Sources */,
 				46CF463818195D9B003E63B7 /* LZUser.m in Sources */,
 				46CF462C18195D16003E63B7 /* LZJSONLoader.m in Sources */,
+				46CE6739181A187800382501 /* BDMetricsCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

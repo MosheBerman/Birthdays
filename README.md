@@ -27,7 +27,7 @@ Don't forget to append an access token, like so:
 
     https://graph.facebook.com/feed/me?access_token=1234567890abcdef...
 
-Additionally, note that You may have to paginate your data over multpiple HTTP requests. Once you have your entire data set in a JSON file, you'll be ready to ggo. 
+Additionally, note that You may have to paginate your data over multpiple HTTP requests. Once you have your entire data set in a JSON file, you'll be ready to go. 
 
 License:
 ---

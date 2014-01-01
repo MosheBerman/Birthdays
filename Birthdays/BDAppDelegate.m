@@ -31,7 +31,7 @@
      *  Get the URL for the demo data.
      */
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"moshe_berman_oct_23" withExtension:@"json"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"moshe_berman" withExtension:@"json"];
     
     /**
      *  Load data from the demo file.

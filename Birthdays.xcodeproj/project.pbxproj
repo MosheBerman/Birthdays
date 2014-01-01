@@ -21,7 +21,7 @@
 		46CF461E181957BC003E63B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46CF461C181957BC003E63B7 /* InfoPlist.strings */; };
 		46CF4620181957BC003E63B7 /* BirthdaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CF461F181957BC003E63B7 /* BirthdaysTests.m */; };
 		46CF462C18195D16003E63B7 /* LZJSONLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CF462B18195D16003E63B7 /* LZJSONLoader.m */; };
-		46CF462F18195D30003E63B7 /* moshe_berman_oct_23.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CF462E18195D30003E63B7 /* moshe_berman_oct_23.json */; };
+		46CF462F18195D30003E63B7 /* moshe_berman.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CF462E18195D30003E63B7 /* moshe_berman.json */; };
 		46CF463618195D9B003E63B7 /* LZAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CF463118195D9B003E63B7 /* LZAggregator.m */; };
 		46CF463718195D9B003E63B7 /* LZComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CF463318195D9B003E63B7 /* LZComment.m */; };
 		46CF463818195D9B003E63B7 /* LZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CF463518195D9B003E63B7 /* LZUser.m */; };
@@ -63,7 +63,7 @@
 		46CF461F181957BC003E63B7 /* BirthdaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirthdaysTests.m; sourceTree = "<group>"; };
 		46CF462A18195D16003E63B7 /* LZJSONLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZJSONLoader.h; sourceTree = "<group>"; };
 		46CF462B18195D16003E63B7 /* LZJSONLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZJSONLoader.m; sourceTree = "<group>"; };
-		46CF462E18195D30003E63B7 /* moshe_berman_oct_23.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moshe_berman_oct_23.json; sourceTree = "<group>"; };
+		46CF462E18195D30003E63B7 /* moshe_berman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moshe_berman.json; sourceTree = "<group>"; };
 		46CF463018195D9B003E63B7 /* LZAggregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAggregator.h; sourceTree = "<group>"; };
 		46CF463118195D9B003E63B7 /* LZAggregator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZAggregator.m; sourceTree = "<group>"; };
 		46CF463218195D9B003E63B7 /* LZComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZComment.h; sourceTree = "<group>"; };
@@ -198,7 +198,7 @@
 		46CF462D18195D30003E63B7 /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
-				46CF462E18195D30003E63B7 /* moshe_berman_oct_23.json */,
+				46CF462E18195D30003E63B7 /* moshe_berman.json */,
 			);
 			name = "Sample Data";
 			path = Birthdays/SampleData;
@@ -283,7 +283,7 @@
 			files = (
 				46CF4600181957BC003E63B7 /* InfoPlist.strings in Resources */,
 				46CF460E181957BC003E63B7 /* Images.xcassets in Resources */,
-				46CF462F18195D30003E63B7 /* moshe_berman_oct_23.json in Resources */,
+				46CF462F18195D30003E63B7 /* moshe_berman.json in Resources */,
 				46CF4606181957BC003E63B7 /* Credits.rtf in Resources */,
 				46CF460C181957BC003E63B7 /* MainMenu.xib in Resources */,
 			);
